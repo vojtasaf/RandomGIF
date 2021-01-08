@@ -3,7 +3,14 @@ function generateGif() {
 
 	var key = config.apiKey;
 
-	request.open("GET", "https://api.giphy.com/v1/gifs/random?api_key=" + key);
+	var tag = document.getElementById("tag").value;
+
+	console.log(tag);
+
+	request.open(
+		"GET",
+		"https://api.giphy.com/v1/gifs/random?tag=" + tag + "&api_key=" + key
+	);
 
 	request.onload = function () {
 		var response = request.response;
