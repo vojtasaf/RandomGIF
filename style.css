@@ -1,15 +1,58 @@
-div {
+body {
+	background-color: black;
+}
+
+#content {
+	color: whitesmoke;
 	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	margin-top: 40px;
 }
 
 #gif {
 	border-radius: 10px;
+	height: 500px;
 }
 
 button {
 	margin-top: 20px;
+	font-weight: bold;
+	font-size: medium;
+	width: 330px;
+	height: 40px;
+	border-radius: 10px;
+	border: 2px solid purple;
+	color: whitesmoke;
+	background-color: purple;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	border: 2px solid whitesmoke;
+}
+
+button:active {
+	color: purple;
+	background-color: whitesmoke;
 }
 
 input {
 	margin-top: 20px;
+	border: 2px solid whitesmoke;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid purple;
+}
+
+#inputs {
+	font-weight: 600;
+	font-size: medium;
 }
